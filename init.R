@@ -5,5 +5,6 @@
 
 
 install.packages('devtools', repos='http://cran.us.r-project.org')
+install.packages('sys', repos='http://cran.us.r-project.org')
 install.packages('protolite', repos='http://cran.us.r-project.org')
 
