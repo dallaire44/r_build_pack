@@ -24,6 +24,11 @@ install.packages("sys")
 install.packages("webutils")
 install.packages("sendmailR")
 install.packages("rappdirs")
+install.packages("devtools")
+install.packages("zip")
+install.packages("protolite")
+install.packages("brew")
+install.packages("openssl")
 
 
 install.packages("opencpu",dependencies=FALSE)
