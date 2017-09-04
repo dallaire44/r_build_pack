@@ -9,3 +9,4 @@
 install.packages('devtools', repos='http://cran.us.r-project.org')
 devtools::install_github("RcppCore/Rcpp")
 install.packages("/app/protolite_1.7.dd.tar.gz",repos=NULL, type="source")
+install.packages("opencpu",repos='http://cran.us.r-project.org')
