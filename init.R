@@ -3,11 +3,9 @@
 # Example R code to install packages if not already installed
 #
 
-system("echo $PATH")
 
-system("export PATH=$PATH:/app/.root/usr/bin/pkg-config")
+#install.packages("protolite", repos='http://cran.us.r-project.org',configure.vars=c(INCLUDE_DIR="/app/vendor/protobuf/include/google/protobuf",LIB_DIR="/app/vendor/protobuf/lib"))
 
-system("echo $PATH")
-
-install.packages("protolite", repos='http://cran.us.r-project.org',configure.vars=c(INCLUDE_DIR="/app/vendor/protobuf/include/google/protobuf",LIB_DIR="/app/vendor/protobuf/lib"))
-
+install.packages('devtools', repos='http://cran.us.r-project.org')
+devtools::install_github("RcppCore/Rcpp")
+install.packages("/app/protolite_1.7.dd.tar.gz",repos=NULL, type="source")
