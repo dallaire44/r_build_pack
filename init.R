@@ -4,11 +4,7 @@
 #
 
 
-install.packages('devtools', repos='http://cran.us.r-project.org')
-devtools::install_github("RcppCore/Rcpp")
-devtools::install_github("rstats-db/DBI")
-install.packages('jsonlite', repos='http://cran.us.r-project.org')
-install.packages('httr', repos='http://cran.us.r-project.org')
-install.packages('reshape2', repos='http://cran.us.r-project.org')
+system("export PATH=$PATH:/app/.root/usr/bin/pkg-config")
+
 install.packages("protolite", repos='http://cran.us.r-project.org',configure.vars=c(INCLUDE_DIR="/app/vendor/protobuf/include/google/protobuf",LIB_DIR="/app/vendor/protobuf/lib"))
 
